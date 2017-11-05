@@ -10,7 +10,7 @@
 'use strict';
 
 const url = require('url');
-const request = require('node-fetch');
+const request = window.fetch || require('node-fetch');
 const flatten = require('lodash/flatten');
 
 const BASE_URL = 'https://api.thetvdb.com';
